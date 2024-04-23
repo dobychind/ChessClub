@@ -364,7 +364,7 @@
 
 .plane {
     position: absolute;
-    left: 886px;
+    right: 0;
     bottom: 0;
 }
 
