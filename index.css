@@ -1,8 +1,403 @@
-* { 
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .header {
     padding: 26px 72px;
+    background-image: url("./public/background.png");
+    background-position-x: center;
+    height: 700px;
+}
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    gap: 62px;
+    margin: 0 auto;
+    max-width: 1366px;
+    width: 100%;
+}
+
+.text {
+    font-family: 'Merriweather';
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 110%;
+}
+
+.header__content {
+    max-width: 542px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.text__main {
+    font-family: 'Golos Text';
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+}
+
+.buttons__container {
+    padding-top: 16px;
+    display: flex;
+    gap: 16px;
+}
+
+.button {
+    width: 100%;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 66px;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Golos Text';
+    font-weight: 500;
+    line-height: 130%;
+    cursor: pointer;
+}
+
+.button-black {
+    background-color: #000;
+    color: #fff;
+    transition: background-color 0.6s ease, color 0.6s ease;
+
+}
+
+.button-transparent {
+    background-color: transparent;
+    border: 1px solid black;
+    transition: background-color 0.6s ease, color 0.6s ease;
+
+}
+
+.button-black:hover {
+    background-color: #FBCE51;
+    color: #000;
+}
+
+.button-transparent:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.button-text {
+    width: 165px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    padding: 80px 72px 140px;
+
+}
+
+.chess-image {
+    border-radius: 100%;
+}
+
+.flex-container {
+    display: flex;
+    gap: 64px;
+    align-items: center;
+}
+
+.text-middle {
+    font-size: 36px;
+    line-height: 135%;
+}
+
+.text-red {
+    color: #F54932;
+    font-weight: bold;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.relief {
+    margin-left: -27.5px;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.infotable {
+    width: 100%;
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.element {
+    padding: 16px 16px 16px 0;
+    border-bottom: 2px solid #D0D0D0;
+}
+
+.left {
+    padding-left: 16px;
+    border-left: 2px solid #D0D0D0;
+}
+
+.bot {
+    border-bottom: none;
+}
+
+.text-grey {
+    color: #313131;
+    text-align: left;
+    line-height: 120%;
+    opacity: 70%;
+}
+
+.text-bold {
+    line-height: 120%;
+    font-weight: 600;
+}
+
+.cross {
+    padding-right: 12px;
+    text-decoration: line-through;
+    text-decoration-color: #F54932;
+    text-decoration-thickness: 2px;
+}
+
+.footer {
+    background-color: #E9DED4;
+    padding: 40px 72px 72px;
+}
+
+.footer-text {
+    font-size: 16px;
+    text-align: left;
+    opacity: 0, 6;
+    color: #313131;
+}
+
+.text-block {
+    font-size: 54px;
+}
+
+.block_header {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-move {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 100%;
+    background-color: #313131;
+    transition: background-color 0.6s ease, color 0.6s ease;
+
+}
+
+.button-move:hover {
+    background-color: #FBCE51;
+}
+
+.button-left {
+    padding-right: 4px;
+}
+
+.button-right {
+    padding-left: 4px;
+}
+
+.text-part {
+    font-size: 16px;
+}
+
+.participant__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.participant__card {
+    padding: 0 37px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.text-name {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+    padding-top: 8px;
+}
+
+.text-status {
+    color: #313131;
+    font-size: 20px;
+    line-height: 120%;
+    opacity: 0.6;
+}
+
+.participant__button {
+    color: #3057A2;
+    border: 1px solid #3057A2;
+    padding: 12px;
+    background-color: transparent;
+    border-radius: 64px;
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 500;
+    font-family: 'Golos Text';
+    cursor: pointer;
+    transition: background-color 0.6s ease, color 0.6s ease;
+
+}
+
+.participant__button:hover {
+    background-color: #3057A2;
+    color: white;
+}
+
+.stages {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+    position: relative;
+}
+
+.stages_header {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    position: relative;
+}
+
+.text_blue {
+    color: #3057A2;
+    text-wrap: wrap;
+    width: 280px;
+    text-align: left;
+    position: absolute;
+    top: 64px;
+    left: 300px;
+}
+
+.stages__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+
+.stage__cell {
+    background-image: url(/public/cell.png);
+    padding: 20px;
+    display: flex;
+    gap: 16px;
+}
+
+.cell__number {
+    background-color: white;
+    padding: 6px 13px;
+    font-size: 20px;
+    line-height: 120%;
+    border-radius: 60px;
+    height: fit-content;
+    font-weight: 600;
+    font-family: 'Golos Text';
+
+}
+
+.cell__text {
+    font-family: 'Golos Text';
+    font-size: 20px;
+    font-weight: 500;
+    width: 302px;
+}
+
+.span_two {
+    grid-column: span 2;
+}
+
+.span_two_row {
+    grid-row: span 2;
+}
+
+.longer {
+    width: 446px;
+}
+
+.plane {
+    position: absolute;
+    left: 886px;
+    bottom: 0;
+}
+
+.marquee-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+    background-color: #F54932;
+}
+
+.marquee-wrapper:after {
+    position: absolute;
+    content: ' ';
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+}
+
+.marquee {
+    white-space: nowrap;
+    display: inline-block;
+    /* Чтобы текст не переносился на новую строку */
+    font-family: 'Merriweather';
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.slider-container {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1200px;
 }
