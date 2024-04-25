@@ -38,32 +38,73 @@ function move2() {
 setInterval(move2, 20);
 
 
+// document.addEventListener("DOMContentLoaded", function () {
+//     const prevButton = document.querySelector(".button-left");
+//     const nextButton = document.querySelector(".button-right");
+//     const participantList = document.querySelector(".participant__list");
+//     const participantCards = document.querySelectorAll(".participant__card");
+//     const cardWidth = participantCards[0].offsetWidth;
+//     const totalCards = participantCards.length;
+//     let currentIndex = 0;
+  
+//     nextButton.addEventListener("click", () => {
+//       currentIndex = (currentIndex + 1) % totalCards;
+//       updateCardPosition();
+//       updateCurrentSlide();
+//     });
+  
+//     prevButton.addEventListener("click", () => {
+//       currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+//       updateCardPosition();
+//       updateCurrentSlide();
+//     });
+
+//     function updateCardPosition() {
+//       console.log(cardWidth)
+//       participantList.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+//     }
+  
+//     function updateCurrentSlide() {
+//       document.querySelector(".current-slide").textContent = currentIndex + 1;
+//     }
+
+//   });
+
 document.addEventListener("DOMContentLoaded", function () {
-    const prevButton = document.querySelector(".button-left");
-    const nextButton = document.querySelector(".button-right");
-    const participantList = document.querySelector(".participant__list");
-    const participantCards = document.querySelectorAll(".participant__card");
-    const cardWidth = participantCards[0].offsetWidth;
-    const totalCards = participantCards.length;
-    let currentIndex = 0;
-  
-    nextButton.addEventListener("click", () => {
-      currentIndex = (currentIndex + 1) % totalCards;
-      updateCardPosition();
-      updateCurrentSlide();
-    });
-  
-    prevButton.addEventListener("click", () => {
-      currentIndex = (currentIndex - 1 + totalCards) % totalCards;
-      updateCardPosition();
-      updateCurrentSlide();
-    });
-  
-    function updateCardPosition() {
-      participantList.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-    }
-  
-    function updateCurrentSlide() {
-      document.querySelector(".current-slide").textContent = currentIndex + 1;
-    }
+  const prevButton = document.querySelector(".button-left");
+  const nextButton = document.querySelector(".button-right");
+  const participantList = document.querySelector(".participant__list");
+  const participantCards = document.querySelectorAll(".participant__card");
+  const cardWidth = participantCards[0].offsetWidth;
+  const totalCards = participantCards.length;
+  let currentIndex = 0;
+
+  nextButton.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % totalCards;
+    updateCardPosition();
+    updateCurrentSlide();
   });
+
+  prevButton.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+    updateCardPosition();
+    updateCurrentSlide();
+  });
+
+  function updateCardPosition() {
+    console.log(cardWidth)
+    participantList.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+  }
+
+  function updateCurrentSlide() {
+    document.querySelector(".current-slide").textContent = currentIndex + 1;
+  }
+
+  // Обновляем позицию карточек при изменении размера экрана
+  window.addEventListener("resize", () => {
+    updateCardPosition();
+  });
+
+  // Инициализируем позицию карточек при загрузке страницы
+  updateCardPosition();
+});

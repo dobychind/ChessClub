@@ -401,3 +401,217 @@
     overflow: hidden;
     width: 1200px;
 }
+
+.desktop-hide {
+    display: none;
+}
+
+.adaptive-cell {
+    padding: 0;
+}
+
+@media (max-width: 560px) {
+    .flex-container {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .text-middle {
+        font-size: 28px;
+    }
+
+    .container {
+        padding: 80px 20px 100px;
+        gap: 120px;
+    }
+
+    .text {
+        font-size: 36px;
+    }
+
+    .header {
+        padding: 18px 20px;
+        background-image: url(/public/back_adaptive.png);
+        height: 780px;
+    }
+
+    .logo {
+        height: 32px;
+    }
+
+    .buttons__container {
+        flex-direction: column;
+        padding: 0;
+        gap: 14px;
+    }
+
+    .button-text {
+        width: max-content;
+        padding-top: 8px;
+    }
+
+    .button-text {
+        padding: 0;
+    }
+
+    .marquee-wrapper {
+        padding: 10px 0;
+        margin-top: -41px;
+    }
+
+    .marquee {
+        font-size: 16px;
+    }
+
+    .text-middle {
+        font-size: 28px;
+    }
+
+    .adaptive-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .adaptive-el {
+        grid-row: 2;
+        width: 100%;
+        display: flex;
+    }
+
+    .chess-image {
+        width: inherit;
+    }
+
+    .about {
+        gap: 34px;
+    }
+
+    #marqueeWrapper2 {
+        margin: 0;
+    }
+
+    .stages__container {
+        grid-template-columns: repeat(5, 1fr);
+        overflow: hidden;
+    }
+
+    .stage__cell {
+        padding: 62px 19px;
+        gap: 16px;
+    }
+
+    .adaptive-cell {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 28px;
+        padding: 62px 19px 34px;
+    }
+
+    .zero {
+        padding: 0;
+    }
+
+    .span_two_row {
+        grid-row: auto;
+    }
+
+    .span_two {
+        grid-column: auto;
+    }
+
+    .cell__text {
+        width: 243px;
+        font-size: 18px ;
+    }
+
+    .relief {
+        display: flex;
+        width: 100%;
+        margin: 0;
+    }
+
+    .button {
+        padding: 14px;
+    }
+
+    .button-transparent {
+        background-color: #fff;
+        opacity: 0.9;
+        padding: 13px;
+    }
+
+    .stages {
+        gap: 148px;
+    }
+
+    .stages_header {
+        gap: 12px;
+        width: auto;
+    }
+
+    .overlay {
+        gap: 40px;
+    }
+
+    .text__main {
+        text-align: left;
+    }
+
+    .adaptive-image {
+        width: inherit;
+    }
+
+    .table {
+        gap: 44px;
+    }
+
+    .adaptive-hide {
+        display: none;
+    }
+
+    .desktop-hide {
+        display: flex;
+    }
+
+    .text_blue {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .plane {
+        width: 335px;
+        bottom: auto;
+        top: 31%;
+    }
+    .button-block {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .stages_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 28px ;
+    }
+    .participant__card {
+        padding: 0;
+        width: 335px;
+
+    }
+    .participant__list {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .about {
+        overflow: hidden;
+    }
+    .hh {
+        width: 335px;
+    }
+    .participant__button {
+        padding: 8px 12px;
+    }
+}

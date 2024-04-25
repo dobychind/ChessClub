@@ -47,17 +47,17 @@
 
         <!-- 1 блок -->
         <div class="about">
-            <div class="flex-container">
-                <p class="text text-middle">Чтобы поддержать Международный васюкинский турнир посетите лекцию на тему:
-                    <span class="text-red">«Плодотворная дебютная идея»</span>
-                </p>
-                <img src="/public/chess_tour.png" class="chess-image" alt="">
+            <div class="flex-container text text-middle adaptive-grid">
+                Чтобы поддержать Международный васюкинский турнир<span>посетите лекцию на тему:
+                    <span class="text-red">«Плодотворная дебютная идея»</span></span>
+                <div class="adaptive-el"> <img src="/public/chess_tour.png" class="chess-image " alt="">
+                </div>
             </div>
 
             <!-- 2 блок -->
             <div class="flex-container">
                 <div class="relief">
-                    <img src="/public/img1.png" alt="">
+                    <img src="/public/img1.png" class="adaptive-image" alt="">
                 </div>
                 <div class="table">
                     <p class="text text-middle">
@@ -88,52 +88,96 @@
 
         <!-- 3 блок -->
 
-        <div class="stages">
-            <div class="stages_header">
-                <p class="text text-block">Этапы преображения Васюков</p> <span class="text__main text_blue">Будущие
-                    источники обогащения васюкинцев</span>
+        <div class="stages_wrapper">
+            <div class="stages">
+                <div class="stages_header">
+                    <p class="text text-block">Этапы преображения Васюков</p> <span class="text__main text_blue">Будущие
+                        источники обогащения васюкинцев</span>
+                </div>
+                <div class="stages__container">
+
+                    <div class="stage__cell adaptive-cell">
+                        <div class="stage__cell zero">
+                            <p class="cell__number">1</p>
+                            <p class="cell__text">Строительство железнодорожной магистрали Москва-Васюки</p>
+                        </div>
+                        <div class="stage__cell zero desktop-hide">
+                            <p class="cell__number">2</p>
+                            <p class="cell__text">Открытие фешенебельной гостиницы «Проходная пешка» и других
+                                небоскрёбов
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="stage__cell  adaptive-hide">
+                        <p class="cell__number">2</p>
+                        <p class="cell__text">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
+                        </p>
+                    </div>
+
+
+                    <div class="stage__cell span_two_row">
+                        <p class="cell__number">3</p>
+                        <p class="cell__text">Поднятие сельского хозяйства в радиусе на тысячу километров: производство
+                            овощей, фруктов, икры, шоколадных конфет</p>
+                    </div>
+
+
+                    <div class="stage__cell adaptive-cell">
+                        <div class="stage__cell zero">
+                            <p class="cell__number">4</p>
+                            <p class="cell__text">Строительство дворца для турнира</p>
+                        </div>
+                        <div class="stage__cell desktop-hide zero">
+                            <p class="cell__number">5</p>
+                            <p class="cell__text">Размещение гаражей для гостевого автотранспорта</p>
+                        </div>
+                    </div>
+
+
+                    <div class="stage__cell adaptive-hide">
+                        <p class="cell__number">5</p>
+                        <p class="cell__text">Размещение гаражей для гостевого автотранспорта</p>
+                    </div>
+
+
+                    <div class="stage__cell ">
+                        <p class="cell__number">6</p>
+                        <p class="cell__text">Постройка сверхмощной радиостанции для передачи всему миру сенсационных
+                            результатов</p>
+                    </div>
+
+
+                    <div class="stage__cell  span_two">
+                        <p class="cell__number">7</p>
+                        <p class="cell__text longer">Создание аэропорта «Большие Васюки» с регулярным отправлением
+                            почтовых
+                            самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</p>
+                        <img class="plane" src="/public/plane.png" alt="">
+                    </div>
+
+                </div>
             </div>
-            <div class="stages__container">
-                <div class="stage__cell">
-                    <p class="cell__number">1</p>
-                    <p class="cell__text">Строительство железнодорожной магистрали Москва-Васюки</p>
+            <!-- <div class="buttons__container button-block">
+                <button class="button-move button-left">
+                    <img src="/public/ArrowLeft.svg" class="arrow" alt="">
+                </button>
+                <div class="flex">
+                    <p class="text__main text-part current-slide">1&nbsp;</p>
+                    <p class="text__main text-part">/&nbsp;6</p>
                 </div>
-                <div class="stage__cell">
-                    <p class="cell__number">2</p>
-                    <p class="cell__text">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</p>
-                </div>
-                <div class="stage__cell span_two_row">
-                    <p class="cell__number">3</p>
-                    <p class="cell__text">Поднятие сельского хозяйства в радиусе на тысячу километров: производство
-                        овощей, фруктов, икры, шоколадных конфет</p>
-                </div>
-                <div class="stage__cell">
-                    <p class="cell__number">4</p>
-                    <p class="cell__text">Строительство дворца для турнира</p>
-                </div>
-                <div class="stage__cell">
-                    <p class="cell__number">5</p>
-                    <p class="cell__text">Размещение гаражей для гостевого автотранспорта</p>
-                </div>
-                <div class="stage__cell">
-                    <p class="cell__number">6</p>
-                    <p class="cell__text">Постройка сверхмощной радиостанции для передачи всему миру сенсационных
-                        результатов</p>
-                </div>
-                <div class="stage__cell span_two">
-                    <p class="cell__number">7</p>
-                    <p class="cell__text longer">Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых
-                        самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</p>
-                    <img class="plane" src="/public/plane.png" alt="">
-                </div>
-            </div>
+                <button class="button-move button-right">
+                    <img src="/public/ArrowRight.svg" alt="">
+                </button>
+            </div> -->
         </div>
 
         <!-- 4 блок -->
         <div class="about">
             <div class="block_header">
                 <h3 class="text text-block">Участники турнира</h3>
-                <div class="buttons__container button-block">
+                <!-- <div class="buttons__container button-block adaptive-hide">
                     <button class="button-move button-left">
                         <img src="/public/ArrowLeft.svg" class="arrow" alt="">
                     </button>
@@ -144,12 +188,12 @@
                     <button class="button-move button-right">
                         <img src="/public/ArrowRight.svg" alt="">
                     </button>
-                </div>
+                </div> -->
             </div>
             <div class="slider-container">
                 <div class="participant__list">
                     <div class="participant__card">
-                        <img src="/public/participant.png" alt="">
+                        <img src="/public/participant.png" alt="" class="hh">
                         <div>
                             <p class="text__main text-name">Хозе-Рауль Капабланка</p>
                             <p class="text__main text-status">Чемпион мира по шахматам</p>
@@ -160,7 +204,7 @@
                     </div>
 
                     <div class="participant__card">
-                        <img src="/public/participant.png" alt="">
+                        <img src="/public/participant.png" alt="" class="hh">
                         <div>
                             <p class="text__main text-name">Эммануил Ласкер </p>
                             <p class="text__main text-status">Чемпион мира по шахматам</p>
@@ -171,7 +215,7 @@
                     </div>
 
                     <div class="participant__card">
-                        <img src="/public/participant.png" alt="">
+                        <img src="/public/participant.png" alt="" class="hh">
                         <div>
                             <p class="text__main text-name">Александр Алехин</p>
                             <p class="text__main text-status">Чемпион мира по шахматам</p>
@@ -182,7 +226,7 @@
                     </div>
 
                     <div class="participant__card">
-                        <img src="/public/participant.png" alt="">
+                        <img src="/public/participant.png" alt="" class="hh">
                         <div>
                             <p class="text__main text-name">Арон Нимцович</p>
                             <p class="text__main text-status">Чемпион мира по шахматам</p>
@@ -193,7 +237,7 @@
                     </div>
 
                     <div class="participant__card">
-                        <img src="/public/participant.png" alt="">
+                        <img src="/public/participant.png" alt="" class="hh">
                         <div>
                             <p class="text__main text-name">Рихард Рети</p>
                             <p class="text__main text-status">Чемпион мира по шахматам</p>
@@ -204,7 +248,7 @@
                     </div>
 
                     <div class="participant__card">
-                        <img src="/public/participant.png" alt="">
+                        <img src="/public/participant.png" alt="" class="hh">
                         <div>
                             <p class="text__main text-name">Остап Бендер</p>
                             <p class="text__main text-status">Чемпион мира по шахматам</p>
@@ -214,6 +258,19 @@
                         </div>
                     </div>
                 </div>
+
+            </div>
+            <div class="buttons__container button-block">
+                <button class="button-move button-left">
+                    <img src="/public/ArrowLeft.svg" class="arrow" alt="">
+                </button>
+                <div class="flex">
+                    <p class="text__main text-part current-slide">1&nbsp;</p>
+                    <p class="text__main text-part">/&nbsp;6</p>
+                </div>
+                <button class="button-move button-right">
+                    <img src="/public/ArrowRight.svg" alt="">
+                </button>
             </div>
         </div>
     </section>
